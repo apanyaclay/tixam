@@ -20,8 +20,8 @@ class UsersTableSeeder extends Seeder
   			'jk' 							=> 'L',
   			'status' 					=> 'A',
   			'status_sekolah' 	=> 'Y',
-  			'email' 					=> 'admin@ayosinau.com',
-  			'password' 				=> '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm'
+  			'email' 					=> 'admin@apalay.com',
+  			'password' 				=> '$2y$10$eOxhJGlemYN8dEiI3fb0eeBny3rckuwOppZvg1O1mG2CQpt0ye2TC'
   		]);
   	}
   }

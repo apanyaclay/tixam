@@ -194,7 +194,7 @@ class CrudController extends Controller
     // dd($request->all());
     if ($request->id == 'N') {
       $query = new User;
-      $query->password = bcrypt(123456);
+      $query->password = bcrypt(apalay123);
     } else {
       $query = User::where('id', $request->id)->first();
       if ($request->password != '') {
@@ -215,7 +215,7 @@ class CrudController extends Controller
     // dd($request->all());
     if ($request->id == 'N') {
       $query = new User;
-      $query->password = bcrypt(123456);
+      $query->password = bcrypt(apalay123);
     } else {
       $query = User::where('id', $request->id)->first();
       if ($request->password != '') {
@@ -291,7 +291,7 @@ class CrudController extends Controller
     $query->status = 'S';
     $query->status_sekolah = 'Y';
     $query->email = $request->email;
-    $query->password = bcrypt(123456);
+    $query->password = bcrypt(apalay123);
     $query->save();
     return 1;
   }
@@ -394,7 +394,7 @@ class CrudController extends Controller
       //     $query->status = 'S';
       //     $query->status_sekolah = 'Y';
       //     $query->email = trim(strtolower($value->no_induk)) . '@ayosinau.com';
-      //     $query->password = bcrypt(123456);
+      //     $query->password = bcrypt(apalay123);
       //     if ($query->save()) {
       //       $sukses = $sukses + 1;
       //     }

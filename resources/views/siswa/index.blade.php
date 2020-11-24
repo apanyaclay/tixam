@@ -74,12 +74,7 @@
                 <input type="email" class="form-control" id="email" name="email" placeholder="Email">
               </div>
             </div>
-            <div class="form-group">
-              <label for="password" class="col-sm-3 control-label">Password</label>
-              <div class="col-sm-9">
-                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-              </div>
-            </div>
+            
             <div class="form-group" style="margin-top: 20px">
               <div class="col-sm-offset-3 col-sm-9">
                 <div id="notif" style="display: none;"></div>
