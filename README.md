@@ -63,7 +63,6 @@ php artisan db:seed
 ```
 
 Setelah proses diatas berhasil dilalui tanpa hambatan, silahkan akses di browser url http://localhost/tixam/public untuk mengakses aplikasi ujian.
-[![TiXam Video Installation](https://img.youtube.com/vi/3IblPpFb0_Y/0.jpg)](https://www.youtube.com/watch?v=3IblPpFb0_Y)
 
 ## Info Tambahan
 
