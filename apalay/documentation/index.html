@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tixam - Documentation</title>  
+    <meta name="description" content="Tixam Ver 1.0 - Documentation">
+    <meta name="author" content="Apalay">
+    <meta name="copyright" content="Apalay"> 
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="assets/images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+
+    <!-- Ionicons -->
+   
+    <!-- Theme style -->
+    <link rel="stylesheet" href="assets/css/docmain.min.css">
+    <link rel="stylesheet" href="assets/css/_all-skins.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body class="skin-blue fixed" data-spy="scroll" data-target="#scrollspy">
+    <div class="wrapper">
+      <header class="main-header">
+       <a href="http://apalay.com" target="_blank" class="logo">
+        <b>Ti</b>Xam</a>
+        </a>
+       <nav class="navbar navbar-static-top" role="navigation">
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <div class="navbar-custom-menu" style="padding: 10px;">
+            <a href="http://apalay.com/" target="_blank"><img src="assets/images/apalay-square-logo.jpg" alt="img" class="" height="30"></a>
+          </div>
+        </nav>
+      </header>
+     
+      <aside class="main-sidebar">
+        <div class="sidebar single-page-nav" id="scrollspy">
+          <ul class="nav sidebar-menu">       
+            <li class="active page-scroll"><a href="#documenter_cover">Mulai</a></li>
+            <li class="page-scroll"><a href="#sysreq">System Requirements</a></li>
+            <li class="page-scroll"><a href="#install">Install Tixam</a></li>
+            <li class="page-scroll"><a href="#update">Update Tixam</a></li>
+            <li class="page-scroll"><a href="#using">Penggunaan Tixam</a></li>
+             <li id="adminpanel">
+              <a href="#"><i class="fa fa-angle-left pull-right"></i> Admin Panel</a>
+              <ul class="nav treeview-menu">
+                  <li class="page-scroll"><a href="#dashboard"><i class="fa fa-angle-double-right"></i>Dashboard</a></li>
+                  <li class="page-scroll"><a href="#masterdata"><i class="fa fa-angle-double-right"></i>Master Data</a></li>
+                  <li class="page-scroll"><a href="#e-learning"><i class="fa fa-angle-double-right"></i>E-learning</a></li>
+				  <li class="page-scroll"><a href="#cetak"><i class="fa fa-angle-double-right"></i>Cetak</a></li>
+                  <li class="page-scroll"><a href="#pengaturan"><i class="fa fa-angle-double-right"></i>Pengaturan</a></li>
+              </ul>
+            </li>
+            <li class="page-scroll"><a href="#studentpanel">Siswa Panel</a></li>
+            <li class="page-scroll"><a href="#changelog">Changelog</a></li>   
+            <li class="page-scroll"><a href="#freesupp">Free Help & Support</a></li>
+          </ul>
+        </div>
+      </aside>
+      <div class="content-wrapper">
+        <div class="content body">
+
+<section id="documenter_cover">
+<h1 class="page-header">Tixam - Aplikasi Berbasis Komputer</h1>
+<h5 style="margin-top: 0px;font-style: italic;">membantu dalam mengembangkan sistem pendidikan di Indonesia.</h5>
+<!--<h2 QDOCS</h2>-->
+<h5><span style="font-size:14px;">By</span><br>
+<a href="http://apalay.com" target="_blank"><img src="assets/images/apalay.jpg" alt="img" class="" width="150"  /></a></h5>
+<hr> 
+<p>
+                    Ver. 1.0<br/>
+                    Email: <a href="mailto:support@apalay.com">support@apalay.com</a><br/>
+                    Website: <a href="http://apalay.com" target="_blank">apalay.com</a>
+                </p>
+                <hr>
+                <p>kami berterima kasih telah menggunakan <b>Tixam</b>!</p>
+
+<a href="https://github.com/apanyaclay/tixam" target="_blank" class="btn btn-primary button-primary">Github</a>     
+<a href="#freesupp" class="btn btn-primary button-primary button-primary2">Help & Support</a>
+</section>
+
+
+<!-- ============================================================= -->
+
+<section id="sysreq">
+<h1 class="page-header">System Requirements</h1><hr>
+   <P>Untuk menginstall <b>Tixam</b>, Your web server must be running <b>PHP 5.4 or higher</b> and <b>Mysql 5.1 or higher</b>. We have tested it with Windows, Mac and Linux but for optimum performance we will recommend to use <b>Linux with Apache webserver</b>. Below are a list of items you should ensure your host can comply with.</P>
+                <ul>
+                    <li>PHP 7.2+</li>
+                    <li>MYSQL 5.1+</li>
+					<li>OpenSSL PHP Extension</li>
+                    <li>PDO PHP Extension</li>               
+                    <li>Mbstring PHP Extension</li>
+                    <li>Tokenizer PHP Extension</li>					
+                    <li>XML PHP Extension</li>
+                    <li>Browser (lebih direkomendasikan Chrome versi 60 keatas)</li>
+                </ul>
+                
+</section>
+<!--end Requirements-->
+
+
+<!-- ============================================================= -->
+
+<!--Installation-->
+<section id="install">
+<h1 class="page-header">Instalasi Tixam</h1><hr>
+  <p>Disini akan saya jelaskan proses instalasi pada sistem operasi Windows..<p/>
+  <h4>Pertama</h4>
+    <p>silahkan download XAMPP, silahkan download <a href="https://www.apachefriends.org/xampp-files/7.0.32/xampp-win32-7.0.32-0-VC14-installer.exe" target="_blank" title="silahkan buka di tab baru, dengan klik kanan atau klik CTRL + clik">disini</a>.
+        Silahkan install XAMPP yang telah berhasil Anda download. Pastikan dikomputer Anda belum terinstall PHP & MySQL untuk menghindari konflik port. Apabila sebelumnya telah ada, silahkan cek versi PHP harus 7.2.</p>
+    <h4>- Kedua</h4>
+        <p>Setelah berhasil menginstal PHP dan MySQL (dalam paket XAMPP), kita lanjutkan install composer dan gitbash.</p>
+        <p>Untuk composer silahkan download <a href="https://getcomposer.org/" target="_blank" title="silahkan buka di tab baru, dengan klik kanan atau klik CTRL + clik">disini</a>.</p>
+        <p>Untuk gitbash silahkan download <a href="https://git-scm.com/download/win" target="_blank" title="silahkan buka di tab baru, dengan klik kanan atau klik CTRL + clik">disini</a>.</p>
+        <p>Silahkan instal composer dan git bash di komputer server Anda. Setelah semua berhasil diinstal dengan benar kita bisa mulai clone aplikasi ini ke komputer kita.</p>
+    <h4>- Ketiga</h4>
+        <p>Buka command prompt (gitbash) lalu arahkan ke folder htdocs (ada didalam folder xampp, misal Anda menginstal di C. Berarti Anda harus ke folder C:\\xampp\htdocs).</p>
+        <p>Setelah itu ketikan:</p>
+        <p>git clone https://github.com/apanyaclay/tixam.git</p>
+        <p>Tunggu sampai file selesai di clone ke folder htdocs server Anda, lalu masuk ke folder <b>tixam</b> dengan mengetikan (```cd tixam```) pada command prompt (gitbash) Anda, lalu ketikan :</p>
+        <p>composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist</p>
+        <p>php artisan key:generate</p>
+        <p>Atau apabila anda telah melakukan instalasi sebelumnya silahkan update composer dengan ketikan script dibawah ini (opsi ini hanya digunakan apabila terdapat update aplikasi, saat instalasi awal tidak diperlukan menggunakan script ini karena akan memakan waktu cukup lama):</p>
+        <p>composer update --verbose --profile --prefer-dist</p>    
+    <h4>- Keempat</h4>
+        <p>Buka browser dan ketikan url http://localhost/phpmyadmin. Lalu buat database baru dengan nama <b>tixam</b>.</p>
+    <h4>- Kelima</h4>
+        <p>Setelah itu ketikan script berikut pada command promt:</p>
+        <p>php artisan migrate</p>
+        <p>php artisan db:seed</p>
+    <h4>Finish</h4>
+        <p>Setelah proses diatas berhasil dilalui tanpa hambatan, silahkan akses di browser url http://localhost/tixam/public untuk mengakses aplikasi ujian.</p>
+    <h4>Info Tambahan</h4>
+        <p>Untuk login sebagai admin silahkan gunakan email: <b>admin@apalay.com</b>, password: <b>apalay123</b></p>
+        <p>Setiap Admin Menambahkan siswa baru maka password delfaut nya yaitu : <b>apalay123</b></p>
+</section>
+
+
+<!--Update-->
+<section id="update">
+<h1 class="page-header">Upgrade dari Versi Sebelumnya</h1><hr>
+  <h4>Upgrade dari versi 0.9. ke versi 1.0</h4>
+                <p>Aplikasi ini bersifat terbuka, siapapun dipersilahkan untuk menjadi kontributor untuk meningkatkan kualitas aplikasi ini.</p>
+                <p>Buat yang telah berhasil menggunakan, jangan lupa untuk kasih bintang ya supaya aplikasi kita ini semakin dikenal luas dan membawa manfaat lebih banyak lagi bagi dunia pendidikan kita.</p>
+</section>
+<!--end Update-->
+
+<!--Using Smart School-->
+<section id="using">
+<h1 class="page-header">Penggunaan Tixam</h1><hr>
+<h4>Tixam - Aplikasi Berbasi Komputer</h4>
+    <P>sangat cocok digunakan untuk Ulangan, Ujian, Try Out dan untuk kegiatan pembelajaran apalagi dalam situasi pandemi <b>Covid-19</b></P>
+</section>
+<!--end Using Smart School-->
+
+<!--Admin Panel-->
+<section id="adminpanel">
+<h1 class="page-header">Admin Panel</h1><hr>
+  <P>Login to Admin Panel through URL - <strong>http://yourdomain/public/login</strong></P>
+
+                <h4>Admin Panel consist 5 modules listed below -</h4>
+                <ol>
+                <li><strong>Dashboard</strong> -    menampilkan jumlah siswa, jumlah guru, jumlah materi, jumlah paket soal dan aktivitas login </li>
+                    <li><b>Master Data</b> - halaman menglola guru, siswa dan kelas</li>
+                    <li><b>E-learning</b> - halaman pemberian materi dan ujian</li>
+					          <li><b>Cetak</b> - halaman mencetak kartu ujian dan pengumuman</li>
+                    <li><b>Pengaturan</b> - halaman untuk melakukan pembaharuan</li>
+                </ol> 
+</section>
+<!--end Admin Panel-->
+
+<!--Front Office-->
+<section id="dashboard"><h1 class="page-header">Dashboard</h1><hr>
+<p>Terdapat 6 fungsi -</p>
+                <ol>
+                    <li><b>Jumlah Siswa</b></li>
+                    <li><b>Jumlah Guru</b></li>
+                    <li><b>Jumlah Paket soal</b></li>
+					<li><b>Jumlah Materi</b></li>
+					<li><b>Log Aktivitas</b></li>
+					<li><b>Paket Soal</b></li>				
+                </ol>
+                <p><img src="assets/images/dashboard.png" alt="img" class="img-responsive"/></p>
+                
+</section>
+<!--end Front Office-->
+
+<!--Student Information-->
+<section id="masterdata"><h1 class="page-header">Master Data</h1><hr>
+ <P>Terdapat 3 Fungsi -</P>
+                <ol>
+                    <li><b>Guru</b></li>
+                    <p><img src="assets/images/guru.png" alt="img" class="img-responsive"/></p>
+                    <li><b>Kelas</b></li>
+                    <p><img src="assets/images/kelas.png" alt="img" class="img-responsive"/></p>
+                    <li><b>Siswa</b></li>
+                    <p><img src="assets/images/siswa.png" alt="img" class="img-responsive"/></p>
+                </ol>
+</section>
+<!--end Student Information-->
+
+<!--Fees Collection-->
+<section id="e-learning"><h1 class="page-header">E-learning</h1><hr>
+   <P>Terdapat 3 fungsi -</P>
+                <ol>
+                    <li><b>Materi</b>></li>
+                    <p><img src="assets/images/materi.png" alt="img" class="img-responsive"/></p>
+                    <li><b>Soal</b></li>
+                    <p><img src="assets/images/soal.png" alt="img" class="img-responsive"/></p>
+                    <li><b>Laporan</b></li>
+                    <p><img src="assets/images/laporan.png" alt="img" class="img-responsive"/></p>
+                </ol>
+</section>
+<!--end Fees Collection-->
+
+<!--income-->
+<section id="cetak"><h1 class="page-header">Cetak</h1><hr>
+<p>Terdapat 2 fungsi -</p>
+                <ol>
+                    <li><b>Kartu Ujian</b></li>
+                    <p><img src="assets/images/kartu ujian.png" alt="img" class="img-responsive"/></p>
+                    <li><b>Berita Acara</b></li>
+                    <p><img src="assets/images/berita.png" alt="img" class="img-responsive"/></p>
+                </ol>
+</section>
+<!--end income-->
+
+<!--expenses-->
+<section id="pengaturan"><h1 class="page-header">Pengaturan</h1><hr>
+<p>Terdapat 2 fungsi -</p>
+                <ol>
+                    <li><b>Info Profil</b></li>
+                    <p><img src="assets/images/profil.PNG" alt="img" class="img-responsive"/></p>
+                    <li><b>Info Sekolah</b></li>
+                    <p><img src="assets/images/sekolah.PNG" alt="img" class="img-responsive"/></p>
+                </ol>
+</section>
+<!--end expenses-->
+
+<!--Student Panel-->
+<section id="studentpanel"><h1 class="page-header">Siswa Panel</h1><hr>
+  <P>Login to Student Panel through URL <strong>http://yourdomain/public/login</strong>. Terdapat 4 panel fungsi -</P>
+                <ol>
+                    <li><strong>Dashboard</strong></li>
+                    <p><img src="assets/images/dashboard siswa.PNG" alt="img" class="img-responsive"/></p>
+                    <li><strong>Materi</strong></li>
+                    <p><img src="assets/images/materi siswa.PNG" alt="img" class="img-responsive"/></p>
+                    <li><strong>Ujian</strong></li>
+                    <p><img src="assets/images/ujian siswa.PNG" alt="img" class="img-responsive"/></p>
+                    <li><strong>Pengaturan</strong></li>      
+                    <p><img src="assets/images/pengaturan siswa.PNG" alt="img" class="img-responsive"/></p>        
+                </ol>
+</section>
+<!--end Student Panel-->
+
+<!--Changelog-->
+<section id="changelog">
+<h1 class="page-header">Tixam Changelog version 1.0</h1><hr>
+                <h5><strong>Version 1.0</strong></h5>
+                <p>Rilis tanggal : 25 November, 2020</p>      
+                <p><strong>Fitur :</strong></p>
+                <ul>
+                    <li>Menambahkan E-learning</li>
+                    <li>Menambahkan menu pengaturan</li>
+					<li>Memperbaiki tema</li>
+                </ul>
+				
+</section>
+<!--end Changelog-->
+
+<!--Free Support-->
+<section id="freesupp"><h1 class="page-header">Free Help & Support</h1><hr>
+  <p>Butuh bantuan dalam menginstall atau yang lainnya ? Segera hubungi kami.</p>
+                
+                                <p><a href="http://apalay.com" class="button button-primary button-hero">Go to Support Portal</a></p>
+</section>
+<!--End free support-->
+
+<!--Thanks-->
+<section>
+   <h3>Terima Kasih telah menggunakan Tixam!</h3><hr>
+                                <p>Sekali lagi kami berterimakasih karena telah menggunakan aplikasi ini untuk menunjang pendidikan di Indonesia.</p>
+                                <h5 class="alert"><i>Jika suka dengan aplikasi kami jangan lupa kunjungi Website kami dan berlangganan di sana</i></h5>
+                                <h5 style="color:#1e8cbe;"><b>Apalay Team</b></h5>
+                                <div style="padding-top:70px;"></div>
+</section>
+<!--Thanks-->
+
+        </div><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+        <strong>Copyright © 2020 <a href="http://apalay.com/" target="_blank">Apalay</a></a> 
+      </footer>
+
+      
+
+    </div><!-- ./wrapper -->
+<a class="scrool-top" href="javascript:void(0)"><i class="fa fa-angle-up"></i></a> 
+    <!-- jQuery 2.2.3 -->
+    <script src="assets/js/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="assets/js/bootstrap.min.js"></script>
+     <script src="assets/js/jquery.easing.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+     <!-- FastClick -->
+    <script src="assets/js/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/js/app.min.js"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+  
+    <script src="assets/js/docs.js"></script>
+    <script src="assets/js/jquery.singlePageNav.min.js"></script>
+  </body>
+</html>
