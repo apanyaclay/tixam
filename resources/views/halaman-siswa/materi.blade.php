@@ -4,7 +4,7 @@
   <h1>Materi</h1>
   <ol class="breadcrumb">
     <li><a href="{{ url('/home') }}"><i class="fa fa-home"></i> Home</a></li>
-    <li class="active">Materi TiXam</li>
+    <li class="active">Materi</li>
   </ol>
 @endsection
 @section('content')
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="box-footer" style="margin: 0; padding: 0 10px">
-        <p class="text-muted">Materi disiapkan oleh <a href="https://ayosinau.com" target="_blank">Ayosinau.com</a></p>
+        <p class="text-muted">Materi disiapkan oleh <a href="https://apalay.com" target="_blank">Apalay.com</a></p>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@
 	    </div>
 	    <div class="box-body">
 	      <p>Silahkan kamu pelajari materi yang tersedia.</p>
-        <p>Kamu juga bisa akses langsung ke <a href="https://ayosinau.com" target="_blank">Ayosinau.com</a> untuk mendapatkan informasi lebih lanjut.</p>
+        <p>Kamu juga bisa akses langsung ke <a href="https://apalay.com" target="_blank">Apalay.com</a> untuk mendapatkan informasi lebih lanjut.</p>
 	    </div>
 	  </div>
   </div>

@@ -190,8 +190,94 @@
           </div>
         </div>
       @else
-      	Anda tidak diperkenankan memasuki halaman pada url ini.
-      @endif
+      <div class="nav-tabs-custom">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tabInfo" data-toggle="tab"><i class="fa fa-user" aria-hidden="true"></i> Info profil</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tabInfo">
+              <caption>Silahkan ubah data dalam form dibawah.</caption>
+              <form method="post" id="form_profil" class="form-horizontal">
+              	{{ csrf_field() }}
+                <div class="box-body" style="padding-bottom: 0;">
+                  <div class="form-group">
+                    <label for="nama" class="col-md-3 control-label">Nama Lengkap</label>
+                    <div class="col-sm-8">
+                      <input type="hidden" name="id" value="{{ $user->id }}">
+                      <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama Lengkap" value="{{ $user->nama }}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="no_induk" class="col-md-3 control-label">NIS</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" name="no_induk" id="no_induk" placeholder="NIS" value="{{ $user->no_induk }}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="nisn" class="col-md-3 control-label">NISN</label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" name="nisn" id="no_induk" placeholder="NISN" value="{{ $user->nisn }}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="no_induk" class="col-md-3 control-label">Jenis Kelamin</label>
+                    <div class="col-sm-5">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="jk" id="laki_laki" value="L" <?php if ($user->jk == 'L') { echo "checked"; } ?>> Laki-laki
+                        </label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <label>
+                          <input type="radio" name="jk" id="perempuan" value="P" <?php if ($user->jk == 'P') { echo "checked"; } ?>> Perempuan
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="col-md-3 control-label">Email</label>
+                    <div class="col-sm-5">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" value="{{ $user->email }}">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-md-3 control-label">Password</label>
+                    <div class="col-sm-5">
+                      <input type="password" class="form-control" data-toggle="tooltip" title="Kosongkan field ini jika tidak ingin merubah password Anda." name="password" id="password" placeholder="Password" value="">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="form-horizontal">
+                <div class="box-body">
+                  <div class="form-group">
+                    <label for="judul" class="col-sm-3 control-label">Foto</label>
+                    <div class="col-sm-6">
+                      @if($user->gambar != "")
+                      <img src="{{ url('/assets/img/user/'.$user->gambar) }}" alt="user img" width="250px" class="img img-thumbnail" style="margin-bottom: 10px">
+                      @else
+                      <img src="{{ url('/assets/img/noimage.jpg') }}" alt="user img" width="250px" class="img img-thumbnail" style="margin-bottom: 10px">
+                      @endif
+                      <form action="{{ url('/crud/simpan-gambar-user') }}" class="dropzone">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="id_user_gambar" value="{{ $user->id }}">
+                        <div class="fallback">
+                          <input name="file" type="file" multiple />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                      <button type="button" class="btn btn-primary btn-md" id="update_profil">Update</button>
+                      <div id="notif" style="display: none; margin: 15px 0 0 0"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @endif
     </div>
     <div class="overlay" id="loading" style="display: none;">
       <i class="fa fa-refresh fa-spin"></i>
@@ -210,11 +296,15 @@
       </p>
       @if($user->status == 'G' or $user->status == 'A')
         <p>
-          Apabila mengalami kesulitan silahkan bergabung di grup Telegram <a href="https://t.me/joinchat/AAAAAEBw8pZR9SpdKAjpbw" target="_blank">Disini</a>, Facebook <a href="https://web.facebook.com/groups/937184553057468/" target="_blank">Disini</a>, serta selalu kunjungi akun anda di <a href="http://ayosinau.com" target="_blank">ayosinau.com</a> untuk mendapatkan informasi terkini terkait aplikasi ini.
-          File terbaru aplikasi ini bisa di temukan di akun Github TiXam<a href="https://github.com/wisnuvb/tixam" target="_blank">Disini</a>. Sangat kami sarankan untuk menggunakan <a href="https://getcomposer.org" target="_blank">Composser</a> dan <a href="https://git-scm.com" target="_blank">GIT</a> untuk mengupdate Aplikasi ini. Jangan lupa kasih bintang (<i class="fa fa-star-o" aria-hidden="true"></i>) ya <i class="fa fa-smile-o" aria-hidden="true"></i> <i class="fa fa-smile-o" aria-hidden="true"></i> <i class="fa fa-smile-o" aria-hidden="true"></i>.
+          Apabila mengalami kesulitan silahkan bergabung di grup Telegram <a href="https://t.me/apalay" target="_blank">Disini</a>, Facebook <a href="https://www.facebook.com/Apalay-105080078050091/" target="_blank">Disini</a>, serta selalu kunjungi akun anda di <a href="http://apalay.com" target="_blank">apalay.com</a> untuk mendapatkan informasi terkini terkait aplikasi ini.
+          File terbaru aplikasi ini bisa di temukan di akun Github TiXam <a href="https://github.com/apanyaclay/tixam" target="_blank">Disini</a>. Sangat kami sarankan untuk menggunakan <a href="https://getcomposer.org" target="_blank">Composser</a> dan <a href="https://git-scm.com" target="_blank">GIT</a> untuk mengupdate Aplikasi ini. Jangan lupa kasih bintang (<i class="fa fa-star-o" aria-hidden="true"></i>) ya <i class="fa fa-smile-o" aria-hidden="true"></i> <i class="fa fa-smile-o" aria-hidden="true"></i> <i class="fa fa-smile-o" aria-hidden="true"></i>.
         </p>
         <p>
           Aplikasi ini dapat digunakan secara gratis dibawah lisensi dari Tipamedia. <b>Dilarang keras memperjual belikan aplikasi ini tanpa seizin dari Tipamedia</b>.
+        </p>
+      @else
+        <p>
+          Jangan lupa kasih bintang (<i class="fa fa-star-o" aria-hidden="true"></i>) ya <i class="fa fa-smile-o" aria-hidden="true"></i> <i class="fa fa-smile-o" aria-hidden="true"></i> <i class="fa fa-smile-o" aria-hidden="true"></i>.
         </p>
       @endif
     </div>
@@ -260,26 +350,7 @@ $(document).ready(function(){
       }
     })
   });
-  $(".wrap-is").click(function() {
-    $(this).hide();
-    $(this).closest('td').find('.info-sekolah').show().focus();
-    var jenis = $(this).closest('td').find('.info-sekolah').attr('name');
-    $('.jenisInfo').val(jenis);
-  });
-  $(".info-sekolah").blur(function() {
-    var formInfoSekolah = $("#formInfoSekolah").serialize();
-    var jenisInfo = $('.jenisInfo').val();
-    $.ajax({
-      type: "POST",
-      url: "{{ url('/crud/update-profil-sekolah') }}",
-      data: formInfoSekolah+'&jenisInfo='+jenisInfo,
-      context: this,
-      success: function(data){
-        $(this).hide();
-        $(this).closest('td').find('.wrap-is').html(data).show()
-      }
-    })
-  });
+  
 })
 </script>
 @endpush

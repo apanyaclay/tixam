@@ -13,7 +13,7 @@
   @if(Auth::user()->status == 'A')
     <div class="callout callout-info">
       <h4>Hai, <b>{{ Auth::user()->nama }} (Admin)</b></h4>
-      <p>Anda adalah admin aplikasi ini. Selalu pantau <a href="https://bit.ly/2AsLt8m" target="_blank">https://bit.ly/2AsLt8m</a> untuk mendapatkan update terbaru. Dan yuk ajak guru-guru menjadi kontributor <a href="http://ayosinau.com">Ayosinau.com</a>.</p>
+      <p>Anda adalah admin aplikasi ini. Selalu pantau <a href="https://github.com/apanyaclay/tixam" target="_blank">https://bit.ly/2AsLt8m</a> untuk mendapatkan update terbaru. Dan yuk ajak guru-guru menjadi kontributor <a href="http://apalay.com">Apalay.com</a>.</p>
     </div>
   @endif
   @if(Auth::user()->status == 'A' || Auth::user()->status == 'G')
@@ -127,8 +127,8 @@
           <h3 class="box-title" style="color: coral"><i class="fa fa-info-circle"></i> Informasi</h3>
         </div>
         <div class="box-body">
-          <p>Terimakasih telah menggunakan aplikasi ujian (<b>TiXam</b>) dari <a href="https://tipa.co.id" target="_blank">Tipamedia</a> ini. Untuk melakukan update sangat disarankan menggunakan <i>git</i> dengan mengetikan <br><i>git pull origin master</i>.</p>
-          <p>Jangan lupa untuk berikan bintang di <a href="https://github.com/wisnuvb/tixam" target="_blank">github tixam</a> ya, supaya lebih banyak lagi yang bisa mengetahui dan menggunakan tixam.</p>
+          <p>Terimakasih telah menggunakan aplikasi ujian (<b>TiXam</b>) dari <a href="https://apalay.com" target="_blank">Apalay</a> ini. Untuk melakukan update sangat disarankan menggunakan <i>git</i> dengan mengetikan <br><i>git pull origin master</i>.</p>
+          <p>Jangan lupa untuk berikan bintang di <a href="https://github.com/apanyaclay/tixam" target="_blank">github tixam</a> ya, supaya lebih banyak lagi yang bisa mengetahui dan menggunakan tixam.</p>
         </div>
       </div>
     </div>

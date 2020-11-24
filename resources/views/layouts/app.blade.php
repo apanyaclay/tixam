@@ -210,10 +210,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="{{ url('/pengaturan') }}" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="{{ route('logout') }}" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -287,6 +287,7 @@
         @elseif($user->status == 'S')
           <li class="{{ Request::is('siswa/materi*') == true ? 'active' : '' }}"><a href="{{ url('siswa/materi') }}"><i class="fa fa-database"></i> <span>Materi</span></a></li>
           <li class="{{ Request::is('siswa/ujian*') == true ? 'active' : '' }}"><a href="{{ url('siswa/ujian') }}"><i class="fa fa-list"></i> <span>Ujian</span></a></li>
+          <li class="{{ Request::is('pengaturan*') == true ? 'active' : '' }}"><a href="{{ url('pengaturan') }}"><i class="fa fa-cog"></i> <span>Pengaturan</span></a></li>
         @endif
         <li class=""><a href="{{ route('logout') }}"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
       </ul>
@@ -314,7 +315,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.0
     </div>
-    <strong>Copyright &copy; 2016-{{ date('Y') }} <a href="http://tipa.co.id" target="_blank">Tipamedia</a>.</strong> All rights
+    <strong>Copyright &copy; 2020-{{ date('Y') }} <a href="https://apalay.com" target="_blank">Apalay</a>.</strong> All rights
     reserved.
   </footer>
 </div>
